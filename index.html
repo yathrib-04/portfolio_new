@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <meta
+      name="description"
+      content="Teyiba Aman, a Software Engineering Student specializing in Fullsack Development, Studying at Addis Ababa University."
+    />
+    <meta
+      name="keywords"
+      content="Teyiba, Aman, Kojila, Software Engineer, Web Developer, Backend Developer, Addis Ababa University, AAiT, Ethiopia, Software Developer, Portfolio, Ethiopian Programmers"
+    />
+    <meta name="author" content="Teyiba Aman " />
+    <meta name="robots" content="index, follow" />
+
+    <mera
+      property="og:title"
+      content="Teyiba - Software Engineer"
+    />
+    <meta
+      property="og:description"
+      content=" Teyiba Aman, a Software Engineering Student specializing in Frontend and Scalable Backend Development, Studying at Addis Ababa University."
+    />
+    <meta property="og:image" content="img/pic_2.jpg" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="Teyiba Aman" />
+    <meta http-equiv="content-language" content="en" />
+
+    <meta property="og:type" content="website" />
+    <title>Teyiba- Software Engineer</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.min.css"
+      integrity="sha512-i5VzKip7owqOGjb0YTF8MR2J9yBVO3FLHeazKzLp354XYTmKcqEU3UeFYUw82R8tV6JqxeATOfstCfpfPhbyEA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@700&family=Poppins:wght@300;400;600&family=Work+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="img/favicon/site.webmanifest" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="img/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+    <script src="tailwind.js"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              "my-purple": "#BC3CD8",
+              "my-red": "#C54B8C",
+              "my-blue": "#242A45",
+              "my-grey": "#E3E4E6",
+              "my-black": "#010208",
+            },
+          },
+          fontFamily: {
+            poppins: ["Poppins", "sans-serif"],
+            "josefin-slab": ["Josefin Slab", "sans-serif"],
+            "work-sans": ["Work Sans", "sans-serif"],
+          },
+          container: {
+            center: true,
+            padding: "1rem",
+            screens: {
+              lg: "1024px",
+              xl: "1124px",
+              "2xl": "1124px",
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      .text-gradient-my-gradient {
+        background: linear-gradient(90deg, #bc3cd8, #c54b8c);
+        -webkit-background-clip: text;
+        color: transparent;
+      }
+    </style>
+  </head>
+  <body class="bg-my-black">
+    <!-- Header -->
+    <header class="mb-12 pt-6">
+      <nav class="container flex">
+        <div class="flex items-center rounded cursor-pointer">
+          <img src="img/favicon/android-chrome-192x192.png" alt="Logo" class="h-14 w-14 mr-2 rounded-full" />
+        </div>
+        <ul
+          id="menu-list"
+          class="hidden md:flex flex-1 flex-col md:flex-row justify-end gap-8"
+        >
+          <li>
+            <a
+              href="#about"
+              class="text-my-grey hover:text-my-purple font-poppins"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="#works"
+              class="text-my-grey hover:text-my-purple font-poppins"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a
+              href="#experience"
+              class="text-my-grey hover:text-my-purple font-poppins"
+              >Experience</a
+            >
+          </li>
+          <li>
+            <a
+              href="#contact"
+              class="text-my-grey hover:text-my-purple font-poppins"
+              >Contact</a
+            >
+          </li>
+        </ul>
+        <div
+          id="menu-button"
+          class="flex md:hidden flex-1 justify-end cursor-pointer"
+        >
+          <i
+            class="menu-icon text-3xl text-my-purple ri-menu-3-line"
+          ></i>
+
+          <i
+            class="hidden menu-icon text-3xl text-my-purple ri-close-fill z-50"
+          ></i>
+        </div>
+      </nav>
+      <div
+        id="overlay"
+        class="hidden fixed inset-0 bg-black bg-opacity-40 backdrop-filter backdrop-blur-lg z-10"
+      >
+        <ul
+          id="mobile-menu"
+          class="fixed text-center top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 shadow-lg p-8"
+        >
+          <li class="py-4 mb-6 text-3xl text-my-grey font-bold">
+            <img src="img/favicon/android-chrome-192x192.png" alt="Logo" class="h-14 w-14 inline-block mr-2 rounded-full align-middle" />
+          </li>
+          <li class="mobile-menu-item py-4 text-xl">
+            <a
+              href="#about"
+              class="text-my-grey hover:text-my-purple font-poppins"
+              >About</a
+            >
+          </li>
+          <li class="mobile-menu-item py-4 text-xl">
+            <a
+              href="#works"
+              class="text-my-grey hover:text-my-purple font-poppins"
+              >Projects</a
+            >
+          </li>
+          <li class="mobile-menu-item py-4 text-xl">
+            <a
+              href="#contact"
+              class="text-my-grey hover:text-my-purple font-poppins"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main class="container my-6">
+      <section
+        id="intro"
+        class="container flex flex-col gap-8 text-center lg:mt-10 mt-10 lg:pt-10 md:pt-6"
+      >
+        <div>
+          <img
+            loading="lazy"
+            src="img/image.png"
+            alt="My Personal Sec:\Users\hp\Downloads\CV (1).pdflfie"
+            class="inline-flex mb-6 object-cover border-4 border-my-red h-24 w-24 !h-48 !w-48 rounded-full"
+          />
+          <p
+            class="text-6xl font-josefin-slab text-my-grey lg:mt-20 md:mt-10"
+          >
+            Hello, I am
+            <span class="text-gradient-my-gradient">Teyba,</span>
+          </p>
+          <p class="text-2xl text-my-grey text-opacity-55">
+            I am a
+            <span class="text-my-grey text-opacity-75"
+              >Software Engineer</span
+            >
+            specializing in
+            <span class="text-white text-opacity-80"
+              >Fullstack Developement</span
+            >
+          
+          </p>
+          <a
+            href="my_resume.pdf"
+            download
+            class="inline-block mt-4 bg-my-purple text-white text-opacity-85 px-6 py-2 rounded-full font-poppins hover:bg-my-red hover:text-white"
+          >
+            Download CV
+          </a>
+          <a
+            class="flex justify-center items-center pb-8 mt-4 md:pb-6"
+            href="#about"
+          >
+            <i
+              class="ri-arrow-down-wide-line text-my-grey text-5xl cursor-pointer hover:text-white hover:border-2 border-my-red rounded-full"
+            ></i>
+          </a>
+        </div>
+      </section>
+      <section id="about">
+        <div class="container flex flex-col lg:mt-12 md:mt-8">
+          <h2
+            class="text-white text-lg font-bold md:mt-10 my-4 mb-4 lg:mt-12"
+          >
+            A LITTLE BIT ABOUT
+            <span class="text-gradient-my-gradient">ME</span>
+          </h2>
+          <div class="grid mb-6">
+            <div
+              class="items-center rounded-lg shadow sm:flex bg-gray-800 border-gray-700 bg-opacity-65"
+            >
+              <div class="p-5">
+                <h3
+                  class="text-xl font-bold tracking-tight text-gray-900 text-white"
+                >
+                  <a>Teyiba Aman </a>
+                </h3>
+                <span class="text-gray-400">Software Engineer</span>
+                <p class="mt-3 mb-4 font-light text-my-grey">
+                  Software Engineering student at
+                  <strong>Addis Ababa University</strong>, passionate
+                  about
+                  <strong>Fullstack Development</strong> 
+                  , especailly
+                  building scalable products. Coding isn't just a job;
+                  it's my way of solving problems and making a
+                  difference. I embrace the mantra
+                  <em
+                    >"The only way to do great work is to love what
+                    you do."</em
+                  >
+
+                  <br />
+                  <br />
+
+                  <span class="font-bold text-my-purple"
+                    >Fun Fact:</span
+                  >
+                  Believes food tastes better when stolen from someone else's plate, and takes pictures of sunsets like it's a life mission.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="works"
+        class="container flex flex-col lg:mt-4 md:mt-4"
+      >
+        <h2
+          class="text-my-grey font-work-sans text-3xl text-opacity-55 md:my-10 my-4 lg:my-12"
+        >
+          Selected <span class="text-white">Works</span>
+        </h2>
+
+        <div>
+          <!-- CARD -->
+          <div
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            class="flex flex-col-reverse lg:flex-row lg:gap-x-8 mb-4 p-8"
+          >
+            <div
+              class="flex flex-col lg:justify-center items-center text-center sm:items-start sm:text-left mb-4"
+            >
+              <h3
+                class="uppercase text-xs font-work-sans py-4 text-my-grey"
+              >
+                Domestic violence Reporting System
+              </h3>
+              <p
+                class="py-2 line-heitght-2 text-light text-xl text-my-grey font-poppins text-opacity-55"
+              >
+                Say No More to
+                <span class="text-opacity-75 text-white"
+                  > silence</span
+                >
+                and 
+                <span class="text-opacity-75 text-white"
+                  >suffering in shadow </span
+                >
+                <br />
+                <span class="font-bold text-gradient-my-gradient"
+                  >Save Heaven</span
+                >
+                offers a secure way to report abuse and connect with emotional, and medical support — because you are not alone.
+              </p>
+              <!-- Check on GIthub button -->
+              <a
+                href="https://github.com/yathrib-04/Domestic-violence-Reporting-System"
+                rel="noopener noreferrer"
+                target="_blank"
+                class="border text-my-grey text-opacity-75 text-xs border-my-grey rounded-3xl px-8 py-2 mt-8 hover:text-my-purple hover:border-my-purple hover:bg-my-red hover:text-white"
+              >
+                <span
+                  class="uppercase text-sm font-work-sans font-bold"
+                  >Github&nbsp;<i
+                    class="ri-github-fill text-my-grey"
+                  ></i>
+                </span>
+              </a>
+            </div>
+            <img
+              loading="lazy"
+              alt="Amharic Spell Checker in Action on Text Editor"
+              class="max-h-[350px] border-2 p-4 border-my-red inset-2 hover:border-my-purple transition-all duration-300 ease-in-out"
+              src="img/projects/save_heaven.png"
+            />
+          </div>
+          <!-- END CARD -->
+
+          <!-- CARD -->
+          <div
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            class="flex flex-col lg:flex-row lg:gap-x-8 mb-4 p-8"
+          >
+            <img
+              loading="lazy"
+              alt="Afaan Oromoo news Classifier web interface"
+              class="max-h-[350px] border-2 p-4 border-my-red inset-2 hover:border-my-purple transition-all duration-300 ease-in-out"
+              src="img/projects/restaurant_order_management_system.png"
+            />
+            <div
+              class="flex flex-col md:justify-center items-center text-center sm:items-start sm:text-left mb-4 p-4"
+            >
+              <h3
+                class="uppercase text-xs font-work-sans py-4 text-my-grey"
+              >
+                Restaurant Order management System 
+              </h3>
+              <p
+                class="py-2 line-heitght-2 text-light text-xl text-my-grey font-poppins text-opacity-55"
+              >
+              <span
+                  class="text-opacity-75 text-white font-work-sans"
+                >
+                  Restaurant Order Management System  </span
+                >is a smart, user-friendly platform designed to streamline your restaurant's daily operations
+                <br />
+                <br />
+                It is a
+                <span class="font-bold text-gradient-my-gradient"
+                  >school project</span
+                >
+                 designed to enhance 
+                <span class="text-opacity-75 text-white">
+                  efficiency and customer service</span
+                >
+                in the food industry
+              </p>
+              <!-- Check on GIthub button -->
+              <div
+                class="flex wrap flex-col sm:flex-row md:flex-end gap-2"
+              >
+                <a
+                  href="https://github.com/ameturebi/Restaurant_Order_Management_System_2024_25"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  class="border text-my-grey text-opacity-75 text-xs border-my-grey rounded-3xl px-8 py-2 mt-8 hover:text-my-purple hover:border-my-purple hover:bg-my-red hover:text-white"
+                >
+                  <span
+                    class="uppercase text-sm font-work-sans font-bold"
+                    >Github&nbsp;<i
+                      class="ri-github-fill text-my-grey"
+                    ></i>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- END CARD -->
+
+          <!-- CARD -->
+          <div
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            class="flex flex-col-reverse lg:flex-row lg:gap-x-8 mb-4 p-8"
+          >
+            <div
+              class="flex flex-col md:justify-center items-center text-center sm:items-start sm:text-left mb-4"
+            >
+              <h3
+                class="uppercase text-xs font-work-sans py-4 text-my-grey"
+              >
+                Guardian app: Medical Info & Emergency Contact Manager
+              </h3>
+              <p
+                class="py-2 line-heitght-2 text-light text-xl text-my-grey font-poppins text-opacity-55"
+              >
+                A Flutter-based mobile app designed to securely manage personal medical information and emergency contacts. 
+                <br />
+                <span class="font-bold text-gradient-my-gradient"
+                  >Guardian app</span
+                >
+                mainly done as final project for mobile Developement
+                Course.
+                <br />
+                <br />
+                <span class="text-opacity-75 text-white"
+                  >Technologies:</span
+                >
+                Flutter, Express.js, MongoDB, and JWT for secure
+              </p>
+              <!-- Check on GIthub button -->
+              <a
+                href="https://github.com/entuelias/flutter-guardian-app-groupproject"
+                rel="noopener noreferrer"
+                target="_blank"
+                class="border text-my-grey text-opacity-75 text-xs border-my-grey rounded-3xl px-8 py-2 mt-8 hover:text-my-purple hover:border-my-purple hover:bg-my-red hover:text-white"
+              >
+                <span
+                  class="uppercase text-sm font-work-sans font-bold"
+                  >Github&nbsp;<i
+                    class="ri-github-fill text-my-grey"
+                  ></i>
+                </span>
+              </a>
+            </div>
+            <img
+              loading="lazy"
+              alt="Taatee Landing Page Preview"
+              class="max-h-[350px] border-2 p-4 border-my-red inset-2 hover:border-my-purple transition-all duration-300 ease-in-out"
+              src="img/projects/guardian_app.png"
+            />
+          </div>
+          <!-- END CARD -->
+        </div>
+      </section>
+      <section
+        id="skills"
+        class="container flex flex-col lg:mt-12 md:mt-8"
+      >
+        <h2
+          class="text-my-grey font-work-sans text-3xl text-opacity-55 md:my-10 my-4 lg:my-12"
+        >
+          My <span class="text-white">Skills</span>
+        </h2>
+        <div
+          data-aos="fade-up"
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
+        >
+          <div
+            class="bg-gray-800 border-gray-700 bg-opacity-65 rounded-lg shadow p-4 text-center"
+          >
+            <h3
+              data-aos="fade-up"
+              data-aos-delay="100"
+              class="text-xl font-bold tracking-tight text-white"
+            >
+              Programming Languages
+            </h3>
+            <p class="mt-3 text-my-grey">
+              Python, Java, JavaScript, TypeScript
+            </p>
+          </div>
+          <div
+            data-aos="fade-up"
+            data-aos-delay="200"
+            class="bg-gray-800 border-gray-700 bg-opacity-65 rounded-lg shadow p-4 text-center"
+          >
+            <h3 class="text-xl font-bold tracking-tight text-white">
+              Web Development
+            </h3>
+            <p class="mt-3 text-my-grey">
+              HTML, CSS, bootstrap,Tailwind CSS, React
+            </p>
+          </div>
+          <div
+            data-aos="fade-up"
+            data-aos-delay="300"
+            class="bg-gray-800 border-gray-700 bg-opacity-65 rounded-lg shadow p-4 text-center"
+          >
+            <h3 class="text-xl font-bold tracking-tight text-white">
+              Backend Development
+            </h3>
+            <p class="mt-3 text-my-grey">
+              Node.js, NestJS, Express.js
+            </p>
+          </div>
+          <div
+            data-aos="fade-up"
+            data-aos-delay="400"
+            class="bg-gray-800 border-gray-700 bg-opacity-65 rounded-lg shadow p-4 text-center"
+          >
+            <h3 class="text-xl font-bold tracking-tight text-white">
+              Databases
+            </h3>
+            <p class="mt-3 text-my-grey">
+              PostgreSQL, MySQL, MongoDB
+            </p>
+          </div>
+          <div
+            data-aos="fade-up"
+            data-aos-delay="100"
+            class="bg-gray-800 border-gray-700 bg-opacity-65 rounded-lg shadow p-4 text-center"
+          >
+            <h3 class="text-xl font-bold tracking-tight text-white">
+              Tools & Technologies
+            </h3>
+            <p class="mt-3 text-my-grey">
+              Git, Github, Docker, AWS
+            </p>
+          </div>
+          
+          <div
+            data-aos="fade-up"
+            data-aos-delay="300"
+            class="bg-gray-800 border-gray-700 bg-opacity-65 rounded-lg shadow p-4 text-center"
+          >
+            <h3 class="text-xl font-bold tracking-tight text-white">
+              Machine Learning
+            </h3>
+            <p class="mt-3 text-my-grey">
+              Scikit-learn, TensorFlow, Keras, PyTorch
+            </p>
+          </div>
+          <div
+            data-aos="fade-up"
+            data-aos-delay="400"
+            class="bg-gray-800 border-gray-700 bg-opacity-65 rounded-lg shadow p-4 text-center"
+          >
+            <h3 class="text-xl font-bold tracking-tight text-white">
+              Soft Skills
+            </h3>
+            <p class="mt-3 text-my-grey">
+              Teamwork, Communication, Problem-solving, Adaptation
+            </p>
+          </div>
+        </div>
+      </section>
+      <section
+        id="education"
+        class="container flex flex-col lg:mt-12 md:mt-8"
+      >
+        <h2
+          class="text-my-grey font-work-sans text-3xl text-opacity-55 md:my-10 my-4 lg:my-12"
+        >
+          <span class="text-white">Education</span>
+        </h2>
+        <div
+          class="bg-gray-800 border-gray-700 bg-opacity-65 rounded-lg shadow p-4"
+        >
+          <h3 class="text-xl font-bold tracking-tight text-white">
+            Bachelor of Science in Software Engineering
+        
+          </h3>
+          <!-- Add Specialization to the bachelor -->
+
+          <p class="mt-1 text-my-grey">
+            Addis Ababa University, Addis Ababa, Ethiopia
+          </p>
+          <p class="mt-1 text-my-grey">2022- 2027</p>
+          <!-- <p class="mt-1 text-my-grey">CGPA: 3.99/4.00</p> -->
+          <p class="mt-3 text-my-grey">Relevant Coursework:</p>
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mt-3"
+          >
+            <span
+              class="bg-gray-800 text-my-grey rounded p-2 text-center"
+              >Web Design and Programming</span
+            >
+            <span
+              class="bg-gray-800 text-my-grey rounded p-2 text-center"
+              >Computer Organization and Architecture</span
+            >
+            <span
+              class="bg-gray-800 text-my-grey rounded p-2 text-center"
+              >Fundamentals of AI</span
+            >
+            <span
+              class="bg-gray-800 text-my-grey rounded p-2 text-center"
+              >Fundamentals of Database</span
+            >
+            <span
+              class="bg-gray-800 text-my-grey rounded p-2 text-center"
+              >Mobile App Development</span
+            >
+            <span
+              class="bg-gray-800 text-my-grey rounded p-2 text-center"
+              >Object Oriented Programming</span
+            >
+            <span
+              class="bg-gray-800 text-my-grey rounded p-2 text-center"
+              >Data Structure and Algorithm Analysis</span
+            >
+            <span
+              class="bg-gray-800 text-my-grey rounded p-2 text-center"
+              >Fundamentals of Operating System</span
+            >
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="experience"
+        class="container flex flex-col lg:mt-12 md:mt-8"
+      >
+        <h2
+          class="text-my-grey font-work-sans text-3xl text-opacity-55 md:my-10 my-4 lg:my-12"
+        >
+          <span class="text-gradient-my-gradient">Experience</span>
+        </h2>
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 gap-4"
+        >
+          <div
+            class="bg-gray-800 border-gray-700 bg-opacity-65 rounded-lg shadow p-4"
+          >
+            <h3 class="text-xl font-bold tracking-tight text-white">
+              Frontend Developer
+            </h3>
+            <p class="mt-1 text-my-grey">CodeSoft </p>
+            <ul class="mt-3 text-my-grey list-disc list-inside">
+              <li>
+                Designed and implemented user-friendly interfaces optimized for performance and accessibility across devices.
+              </li>
+              <li>
+                Utilized 
+                modern front-end technologies such as React to build clean, interactive layouts with responsive design principles, ensuring a 
+                consistent user experience on desktops, tablets, and smartphones.
+              </li>
+              <li>
+                 Connected front-end applications with backend services using RESTful APIs to fetch, display, and update live data. 
+                 Implemented error handling, loading states, and real-time feedback to enhance usability
+              </li>
+              
+            </ul>
+          </div>
+          <div
+            class="bg-gray-800 border-gray-700 bg-opacity-65 rounded-lg shadow p-4"
+          >
+            <h3 class="text-xl font-bold tracking-tight text-white">
+             Backend Developer  
+            </h3>
+            <p class="mt-1 text-my-grey">Prodigy Infotech</p>
+            <ul class="mt-3 text-my-grey list-disc list-inside">
+              <li>
+                Designed and implemented RESTful APIs using Node.js and Express, enabling seamless communication between front-end 
+                clients and databases. 
+              </li>
+              <li>
+                 Integrated and managed SQL and NoSQL databases, improving data retrieval efficiency and application responsiveness. 
+              </li>
+              <li>
+                 Implemented secure user authentication and authorization systems using JWT and OAuth2, enhancing application security.
+              </li>
+              
+            </ul>
+          </div>
+         
+        </div>
+      </section>
+    </main>
+    <footer
+      class="container my-8 flex flex-col justify-center items-center"
+      id="contact"
+    >
+      <hgroup class="">
+        <h2 class="text-5xl text-my-grey text-opacity-55 py-1">
+          Get <span class="text-white text-opacity-85">in Touch</span>
+        </h2>
+        <p class="text-sm text-my-grey text-opacity-55 px-4">
+          So that we can talk more about...
+        </p>
+      </hgroup>
+      <!-- Social Media Links With Remixicon -->
+      <div class="my-2 md:my-4 lg:my-6 flex gap-2">
+        <!-- email -->
+        <a
+          href="https://www.instagram.com/yathrib_aman_/"
+          class="text-my-grey text-opacity-75 hover:text-my-purple"
+          ><i class="ri-instagram-line text-xl md:text-3xl"></i>
+        </a>
+        <a
+          href="https://x.com/yasrib_04"
+          class="text-my-grey text-opacity-75 hover:text-my-purple"
+          ><i class="ri-twitter-line text-xl md:text-3xl"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/yasrib-aman/"
+          class="text-my-grey text-opacity-75 hover:text-my-purple"
+          ><i class="ri-linkedin-fill text-xl md:text-3xl"></i
+        ></a>
+        <a
+          href="https://github.com/yathrib-04"
+          class="text-my-grey text-opacity-75 hover:text-my-purple"
+          ><i class="ri-github-line text-xl md:text-3xl"></i
+        ></a>
+        <a
+          href="https://t.me/Maraaiff"
+          class="text-my-grey text-opacity-75 hover:text-my-purple"
+          ><i class="ri-telegram-line text-xl md:text-3xl"></i>
+        </a>
+      </div>
+      <p class="text-my-grey text-opacity-75 mt-8">
+        &copy; 2025 Teyiba. All rights reserved.
+      </p>
+    </footer>
+
+    <script src="js/collapsible.js"></script>
+    <script src="js/three.min.js"></script>
+    <script src="js/vanta.birds.min.js"></script>
+    <script>
+      // sections
+      const sections = [
+        "intro",
+        "about",
+        "works",
+        "experience",
+        "contact",
+        "education",
+      ];
+      for (let section of sections) {
+        VANTA.BIRDS({
+          el: `#${section}`,
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
+          minHeight: 100.0,
+          minWidth: 200.0,
+          scale: 1.0,
+          scaleMobile: 1.0,
+          backgroundColor: "#010208",
+          quantity: 2.0,
+        });
+      }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
