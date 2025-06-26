@@ -471,6 +471,7 @@
   function Xn(i) {
     return _e.dim(i);
   }
+
   var xu,
     F,
     Oe = C(() => {
@@ -764,6 +765,7 @@
           900: "#581c87",
           950: "#3b0764",
         },
+        
         fuchsia: {
           50: "#fdf4ff",
           100: "#fae8ff",
